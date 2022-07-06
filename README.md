@@ -1,2 +1,9 @@
-
-<div class="gsrt vk_bk dDoNo FzvWSb JgzqYd RES9jf" aria-level="3" role="time">%H:%M:%S</div>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,minimum-scale=1.0" name="viewport">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="address=no" name="format-detection">
+  <meta content="origin" name="referrer">
+  <meta content="notranslate" name="google">
+  <meta
