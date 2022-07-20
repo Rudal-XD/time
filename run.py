@@ -34,4 +34,3 @@ class License:
             )
 
     def license_kadaluarsa(self, license):
-         
