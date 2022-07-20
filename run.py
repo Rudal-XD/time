@@ -23,7 +23,7 @@ class License:
 
         if self.license_name:
 
-    def generate_active(self):
+    def generate_activate(self):
         if self.license_name:
             log = open('license.txt', 'w')
             log.write('license : ©2022 - Ryuuou')
