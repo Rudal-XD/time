@@ -7,12 +7,12 @@ class License:
         self.license_input = license
 
         # License Pertama
-        if self.licensef_input == 'Ryuuou':
+        if self.license_input == 'Ryuuou':
             self.license_name = 'pendragon'
             self.active = '22-06-2022'
 
         # License kedua
-        elif self.licensef_input == 'Vasillias pendragon':
+        elif self.license_input == 'Vasillias pendragon':
             self.license_name = 'pendragon'
             self.active = '30-06-2022'
 
