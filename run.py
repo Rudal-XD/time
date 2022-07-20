@@ -20,11 +20,8 @@ class License:
             print('maaf, license yang anda masukan tidak ada!')
             sys.exit(1)
 
-
-        if self.license_name:
-
-
     def generate_activate(self):
+        if self.license_name:
             log = open('license.txt', 'w')
             log.write('license : ©2022 - Ryuuou')
             log.write('Active : 21-06-2022')
