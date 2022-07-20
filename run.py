@@ -13,8 +13,8 @@ class License:
 
         # License kedua
         elif self.licensef_input == 'Vasillias pendragon':
-            self.license_name = 'pendragon'
-            self.active = '30-06-2022'
+        self.license_name = 'pendragon'
+        self.active = '30-06-2022'
 
         else:
             print('maaf, license yang anda masukan tidak ada!')
