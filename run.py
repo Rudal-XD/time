@@ -2,7 +2,7 @@ import os, subprocess, getpass, Sys
 
 class License:
 
-    def _init_(self, license):
+    def __init__(self, license):
 
         self.license_input = license
 
