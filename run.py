@@ -1,6 +1,4 @@
-# importing whole module
-from tkinter import * 
-from tkinter.ttk import *
+
   
 # importing strftime function to
 # retrieve system's time
